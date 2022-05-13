@@ -17,7 +17,7 @@ def configure_templating(
 
     def get_copy():
         now = datetime.now()
-        return "{} {}".format(now.year, configuration.site.copyright)
+        return f"{now.year} {configuration.site.copyright}"
 
     helpers = {"_": lambda x: x, "copy": get_copy}
 
